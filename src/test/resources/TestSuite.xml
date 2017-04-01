@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1">
+	<!-- Параметр для ВСЕХ тестов в сьюьте -->
+
+	<test name="SortingItemsByPriceTest">
+		<!-- Параметр для ДАННОГО теста -->
+		<parameter name="priceFrom" value="1500" />
+		<parameter name="manufacturer" value="Bosch" />
+		<parameter name="onStock" value="1" />
+		<classes>
+			<class name="com.qaproject.tests.SortingItemsByPriceTest" />
+		</classes>
+	</test>
+	<test name="CurrencyConverterTest">
+		<!-- Параметр для ДАННОГО теста -->
+		<parameter name="oldRublValue" value="101100" />
+		<classes>
+			<class name="com.qaproject.tests.CurrencyConverterTest" />
+		</classes>
+	</test>
+	<test name="SuccessfulLoginTest">
+		<!-- Параметр для ДАННОГО теста -->
+		<parameter name="userName" value="George Tarazevich" />
+		<parameter name="userEmail" value="_jorj@tut.by" />
+		<parameter name="passWord" value="Userfail" />
+
+		<classes>
+			<class name="com.qaproject.tests.SuccessfulLoginTest" />
+		</classes>
+	</test>
+	<test name="AddingItemToShoppingListTest">
+		<classes>
+			<class name="com.qaproject.tests.AddingItemToShoppingListTest" />
+		</classes>
+	</test>
+	<test name="DisplayLastViewTest">
+		<classes>
+			<class name="com.qaproject.tests.DisplayLastViewTest" />
+		</classes>
+	</test>
+
+</suite>
+
+
+
+
